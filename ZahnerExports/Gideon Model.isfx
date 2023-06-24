@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zahner-impedance-model>
+    <zahner-fileinfo>
+        <type>zahner-impedance-model</type>
+        <file-version>2.0</file-version>
+        <created>2023-01-04T14:13:04+02:00</created>
+        <generator>Zahner Analysis</generator>
+        <generator-version>3.1.1</generator-version>
+        <comment></comment>
+    </zahner-fileinfo>
+    <parsed-tree>
+        <serial-connect>
+            <parallel-connect>
+                <capacitor>
+                    <parameter index="0" value="1.94747e-7"/>
+                </capacitor>
+                <serial-connect>
+                    <capacitor>
+                        <parameter index="0" value="3.41805e-7"/>
+                    </capacitor>
+                    <resistor>
+                        <parameter index="0" value="36222.4"/>
+                    </resistor>
+                </serial-connect>
+            </parallel-connect>
+            <resistor>
+                <parameter index="0" value="100"/>
+            </resistor>
+            <parallel-connect>
+                <capacitor>
+                    <parameter index="0" value="2.70553e-11"/>
+                </capacitor>
+                <serial-connect>
+                    <capacitor>
+                        <parameter index="0" value="1.38916e-6"/>
+                    </capacitor>
+                    <resistor>
+                        <parameter index="0" value="278382"/>
+                    </resistor>
+                </serial-connect>
+            </parallel-connect>
+        </serial-connect>
+    </parsed-tree>
+    <schematics-graph>
+        <node type="1" pos-y="0" pos-x="-64" node-id="0">
+            <parameter index="0" value="100" fitterFixed="0"/>
+        </node>
+        <node type="2" pos-y="0" pos-x="128" node-id="1">
+            <parameter index="0" value="2.705532234462983e-011" fitterFixed="1"/>
+        </node>
+        <node type="2" pos-y="0" pos-x="-384" node-id="2">
+            <parameter index="0" value="1.94747328012452e-007" fitterFixed="1"/>
+        </node>
+        <node type="1" pos-y="64" pos-x="256" node-id="3">
+            <parameter index="0" value="278382.0355439766" fitterFixed="1"/>
+        </node>
+        <node type="1" pos-y="64" pos-x="-256" node-id="4">
+            <parameter index="0" value="36222.39114892083" fitterFixed="1"/>
+        </node>
+        <node parallel="2" type="-1" pos-y="0" pos-x="-512" node-id="5"/>
+        <node parallel="2" type="-2" pos-y="0" pos-x="-192" node-id="6"/>
+        <node parallel="2" type="-1" pos-y="0" pos-x="0" node-id="7"/>
+        <node parallel="2" type="-2" pos-y="0" pos-x="320" node-id="8"/>
+        <node type="2" pos-y="64" pos-x="-384" node-id="9">
+            <parameter index="0" value="3.418052708293421e-007" fitterFixed="1"/>
+        </node>
+        <node type="2" pos-y="64" pos-x="128" node-id="10">
+            <parameter index="0" value="1.389160422604974e-006" fitterFixed="1"/>
+        </node>
+        <edge left-node="5" left-vertex="1" right-node="2" right-vertex="0"/>
+        <edge left-node="6" left-vertex="0" right-node="0" right-vertex="0"/>
+        <edge left-node="4" left-vertex="0" right-node="6" right-vertex="2"/>
+        <edge left-node="2" left-vertex="0" right-node="6" right-vertex="1"/>
+        <edge left-node="7" left-vertex="1" right-node="1" right-vertex="0"/>
+        <edge left-node="0" left-vertex="0" right-node="7" right-vertex="0"/>
+        <edge left-node="1" left-vertex="0" right-node="8" right-vertex="1"/>
+        <edge left-node="3" left-vertex="0" right-node="8" right-vertex="2"/>
+        <edge left-node="9" left-vertex="0" right-node="4" right-vertex="0"/>
+        <edge left-node="7" left-vertex="2" right-node="10" right-vertex="0"/>
+        <edge left-node="5" left-vertex="2" right-node="9" right-vertex="0"/>
+        <edge left-node="10" left-vertex="0" right-node="3" right-vertex="0"/>
+    </schematics-graph>
+</zahner-impedance-model>
